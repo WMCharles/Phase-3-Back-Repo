@@ -1,3 +1,4 @@
 class CreateCategories < Sinatra::Base
-    get '/categories'
+    get '/categories' do
+        categories = Category.all
 end
