@@ -4,4 +4,5 @@ require_relative './config/environment'
 use Rack::JSONBodyParser
 
 use CategoryController
+use JobsController
 run ApplicationController
