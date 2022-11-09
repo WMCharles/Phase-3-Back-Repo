@@ -1,2 +1,2 @@
-class CategoriesController < Sinatra::Base
+class Category  < ActiveRecord::Base
 end 
