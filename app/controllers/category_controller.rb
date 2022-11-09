@@ -8,4 +8,6 @@ class CreateCategories < Sinatra::Base
         category = Category.find (params[:id])
         category.to_json
     end
+
+    get '/categories/:category_slug' do
 end
