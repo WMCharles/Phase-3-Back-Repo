@@ -17,7 +17,8 @@ class CreateCategories < Sinatra::Base
     post '/categories'do
     category = Category.create(
         name:params[:name],
-        
+        description:params[description]
     )
+    category.to_json
     end
 end
