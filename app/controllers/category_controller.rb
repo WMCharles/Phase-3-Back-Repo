@@ -1,3 +1,3 @@
 class CreateCategories < Sinatra::Base
-    get
+    get '/categories'
 end
