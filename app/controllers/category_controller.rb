@@ -10,4 +10,7 @@ class CreateCategories < Sinatra::Base
     end
 
     get '/categories/:category_slug' do
+        category = Category.find_by_slug(params[:category_slug])
+        category.to_json
+    end
 end
