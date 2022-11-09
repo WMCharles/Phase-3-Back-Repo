@@ -15,9 +15,12 @@ class JobsController < Sinatra::Base
     # create a new job
     post '/jobs' do 
       job = Job.create(
+          image: params[:image],
           title: params[:title],
-          description: params[:description],
-          deadline: params[:deadline]
+          location: params[:location],
+          deadline: params[:deadline],
+          requirements: params[:requirements],
+          description: params[:description]  
       )
       job.to_json
     end
@@ -26,9 +29,12 @@ class JobsController < Sinatra::Base
     patch '/jobs/:job_slug' do
       job = Job.find_by_slug(params[:job_slug])
       job.update(
-        title: params[:title],
-        description: params[:description],
-        deadline: params[:deadline]
+          image: params[:image],
+          title: params[:title],
+          location: params[:location],
+          deadline: params[:deadline],
+          requirements: params[:requirements],
+          description: params[:description] 
       )
       job.to_json 
     end
