@@ -5,6 +5,7 @@ class CreateJobs < ActiveRecord::Migration[6.1]
       t.string :title
       t.string :location
       t.datetime :deadline
+      t.integer :salary
       t.text :requirements
       t.text :description
       

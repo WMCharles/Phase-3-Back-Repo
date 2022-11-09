@@ -10,6 +10,7 @@ job1 = Job.create(
      deadline: "2022/11/12", 
      requirements:"Bachelor's Degree", 
      description:"Eloquent in JavaScript && Python", 
+     salary: 40000
 )
 
 job2 = Job.create(
@@ -19,6 +20,7 @@ job2 = Job.create(
     deadline: "2022/11/12", 
     requirements:"Bachelor's Degree", 
     description:"Eloquent in JavaScript && Python", 
+    salary: 40000
 )
 
 cat1 = Category.create(name: "Front-End", description:"UI Developer")
