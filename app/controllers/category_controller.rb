@@ -4,5 +4,7 @@ class CreateCategories < Sinatra::Base
         categories.to_json
     end
 
-    get '/categories/'
+    get '/categories/:id' do
+        category = Category.
+    end
 end
