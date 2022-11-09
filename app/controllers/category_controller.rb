@@ -5,6 +5,6 @@ class CreateCategories < Sinatra::Base
     end
 
     get '/categories/:id' do
-        category = Category.find (params[:])
+        category = Category.find (params[:id])
     end
 end
