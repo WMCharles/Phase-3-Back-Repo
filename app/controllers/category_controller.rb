@@ -13,4 +13,7 @@ class CreateCategories < Sinatra::Base
         category = Category.find_by_slug(params[:category_slug])
         category.to_json
     end
+
+    post '/categories'do
+    end
 end
