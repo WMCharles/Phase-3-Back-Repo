@@ -15,5 +15,9 @@ class CreateCategories < Sinatra::Base
     end
 
     post '/categories'do
+    category = Category.create(
+        name:params[:name],
+        
+    )
     end
 end
