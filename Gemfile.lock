@@ -51,6 +51,7 @@ GEM
       activerecord (>= 4.1)
       sinatra (>= 1.0)
     sinatra-cross_origin (0.4.0)
+    sqlite3 (1.5.3-x86_64-darwin)
     sqlite3 (1.5.3-x86_64-linux)
     tilt (2.0.11)
     tzinfo (2.0.5)
@@ -58,6 +59,7 @@ GEM
     zeitwerk (2.6.5)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
