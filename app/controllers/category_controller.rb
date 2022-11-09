@@ -1,1 +1,1 @@
-class CreateCategories
+class CreateCategories < Sinatra::Base
