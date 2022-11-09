@@ -6,5 +6,6 @@ class CreateCategories < Sinatra::Base
 
     get '/categories/:id' do
         category = Category.find (params[:id])
+        category.to_json
     end
 end
