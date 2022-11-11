@@ -5,7 +5,7 @@ Tag.destroy_all
 
 job1 = Job.create(
     image: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmUlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", 
-    tag: " Software Developement",
+    tag: "Software Development",
     title: "Software Engineer", 
     location: "Nairobi",
     deadline: "2022/11/12", 

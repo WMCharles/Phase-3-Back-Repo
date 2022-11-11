@@ -1,7 +1,6 @@
 class JobsController < Sinatra::Base
-
-
-  set :bind, '0.0.0.0'
+    
+    set :bind, '0.0.0.0'
     configure do
         enable :cross_origin
     end
@@ -34,6 +33,7 @@ class JobsController < Sinatra::Base
       job = Job.create(
           image: params[:image],
           title: params[:title],
+          salary: params[:salary],
           location: params[:location],
           deadline: params[:deadline],
           requirements: params[:requirements],
