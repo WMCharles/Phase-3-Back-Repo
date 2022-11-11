@@ -2,6 +2,7 @@ class CreateJobs < ActiveRecord::Migration[6.1]
   def change
     create_table :jobs do |t|
       t.string :image
+      t.string :tag
       t.string :title
       t.string :location
       t.datetime :deadline

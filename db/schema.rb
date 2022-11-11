@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2022_11_09_080714) do
 
   create_table "jobs", force: :cascade do |t|
     t.string "image"
+    t.string "tag"
     t.string "title"
     t.string "location"
     t.datetime "deadline"

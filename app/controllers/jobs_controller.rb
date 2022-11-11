@@ -24,8 +24,8 @@ class JobsController < Sinatra::Base
     end 
     
     #show specific job based on title slug
-    get '/jobs/:job_slug' do
-      job = Job.find_by_slug(params[:job_slug])
+    get '/jobs/:id' do
+      job = Job.find(params[:id])
       job.to_json
     end
 
@@ -43,8 +43,8 @@ class JobsController < Sinatra::Base
     end
 
     # edit specific job 
-    patch '/jobs/:job_slug' do
-      job = Job.find_by_slug(params[:job_slug])
+    patch '/jobs/:id' do
+      job = Job.find(params[:id])
       job.update(
           image: params[:image],
           title: params[:title],
@@ -57,8 +57,8 @@ class JobsController < Sinatra::Base
     end
     
     #process job deletion
-    delete '/jobs/:job_slug' do
-      job = Job.find_by_slug(params[:job_slug])
+    delete '/jobs/:id' do
+      job = Job.find(params[:id])
       job.destroy
       job.to_json
     end
